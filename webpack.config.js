@@ -23,14 +23,6 @@ module.exports = {
             configFile: "./tsconfig.json",
           },
         }
-        // use: [
-        //   {
-        //     loader: "babel-loader",
-        //     options: {
-        //       presets: ["@babel/preset-env", "@babel/preset-react"],
-        //     },
-        //   },
-        // ],
       },
     ],
   },
