@@ -8,21 +8,21 @@ module.exports = {
     filename: "index.js",
   },
   resolve: {
-    modules: [path.resolve(__dirname, "node_modules")],
-    extensions: [".js", ".jsx"],
+    // modules: [path.resolve(__dirname, "node_modules")],
+    extensions: [".js", ".jsx", ".ts", ".tsx"],
   },
   module: {
     rules: [
       {
-        test: [/\.js$/, /\.jsx$/],
-        use: [
-          {
-            loader: "babel-loader",
-            options: {
-              presets: ["@babel/preset-env", "@babel/preset-react"],
-            },
+        test: /.(jsx?|tsx?)$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "ts-loader",
+          options: {
+            transpileOnly: true,
+            configFile: "./tsconfig.json",
           },
-        ],
+        }
       },
     ],
   },
