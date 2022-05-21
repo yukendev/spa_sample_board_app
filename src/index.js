@@ -80,13 +80,23 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 
 /***/ }),
 
-/***/ "./src/Hello.tsx":
-/*!***********************!*\
-  !*** ./src/Hello.tsx ***!
-  \***********************/
+/***/ "./src/Component/Body.tsx":
+/*!********************************!*\
+  !*** ./src/Component/Body.tsx ***!
+  \********************************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Hello = void 0;\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nconst Hello = () => {\n    return react_1.default.createElement(\"p\", null, \"Hello World!!!!!!!!!!\");\n};\nexports.Hello = Hello;\n\n\n//# sourceURL=webpack://spa_sample_board_app/./src/Hello.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Body = void 0;\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nconst Body = () => {\n    return (react_1.default.createElement(\"div\", null, \"body\"));\n};\nexports.Body = Body;\n\n\n//# sourceURL=webpack://spa_sample_board_app/./src/Component/Body.tsx?");
+
+/***/ }),
+
+/***/ "./src/Component/Header.tsx":
+/*!**********************************!*\
+  !*** ./src/Component/Header.tsx ***!
+  \**********************************/
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nexports.Header = void 0;\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nconst Header = () => {\n    return (react_1.default.createElement(\"div\", null,\n        react_1.default.createElement(\"div\", null, \"\\u30B5\\u30F3\\u30D7\\u30EB\\u63B2\\u793A\\u677F\"),\n        react_1.default.createElement(\"div\", null, \"some button\")));\n};\nexports.Header = Header;\n\n\n//# sourceURL=webpack://spa_sample_board_app/./src/Component/Header.tsx?");
 
 /***/ }),
 
@@ -96,7 +106,7 @@ eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {
   \********************/
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nconst client_1 = __importDefault(__webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\"));\nconst Hello_1 = __webpack_require__(/*! ./Hello */ \"./src/Hello.tsx\");\nconst root = client_1.default.createRoot(document.getElementById('root'));\nroot.render(react_1.default.createElement(Hello_1.Hello, null));\n\n\n//# sourceURL=webpack://spa_sample_board_app/./src/app.js?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nconst client_1 = __importDefault(__webpack_require__(/*! react-dom/client */ \"./node_modules/react-dom/client.js\"));\nconst Header_1 = __webpack_require__(/*! ./Component/Header */ \"./src/Component/Header.tsx\");\nconst Body_1 = __webpack_require__(/*! ./Component/Body */ \"./src/Component/Body.tsx\");\nconst header = client_1.default.createRoot(document.getElementById('header'));\nheader.render(react_1.default.createElement(Header_1.Header, null));\nconst body = client_1.default.createRoot(document.getElementById('body'));\nbody.render(react_1.default.createElement(Body_1.Body, null));\n\n\n//# sourceURL=webpack://spa_sample_board_app/./src/app.js?");
 
 /***/ })
 
