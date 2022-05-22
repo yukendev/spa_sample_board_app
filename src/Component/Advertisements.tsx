@@ -53,7 +53,7 @@ export const Advertisements = () => {
   }
 
   return (
-    <div className='mt-5'>
+    <div className='mt-1'>
       <Carousel
         activeIndex={activeIndex}
         next={nextHandler}
