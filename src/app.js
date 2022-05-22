@@ -4,6 +4,7 @@ import '../styles/style.scss'
 import { Header } from './Component/Header';
 import { Body } from './Component/Body';
 import { Footer } from './Component/Footer';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const header = ReactDOM.createRoot(document.getElementById('header'));
 header.render(<Header/>);
