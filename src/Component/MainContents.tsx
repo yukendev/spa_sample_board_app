@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import { MessageCard } from "./MessageCard";
+import { MessageCard } from "./MessageCard/MessageCard";
 
 
 export const MainContents = () => {
@@ -20,6 +20,7 @@ export const MainContents = () => {
       next={fetchData}
       hasMore={true}
       loader={null}
+      className="mx-5"
     >
       {list}
     </InfiniteScroll>
