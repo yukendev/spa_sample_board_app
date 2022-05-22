@@ -53,7 +53,7 @@ export const Advertisements = () => {
   }
 
   return (
-    <div>
+    <div className='mt-5'>
       <Carousel
         activeIndex={activeIndex}
         next={nextHandler}
@@ -67,5 +67,4 @@ export const Advertisements = () => {
       </Carousel>
     </div>
   )
-
 };
